@@ -4,7 +4,7 @@
 
 #Ball
 
-ballId
+ballId <br/>
 batsmanOnStrike
 result
 overId ( references overId from Overball table)
