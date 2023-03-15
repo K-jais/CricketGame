@@ -5,96 +5,97 @@
 #Ball
 
 ballId <br/>
-batsmanOnStrike
-result
-overId ( references overId from Overball table)
+batsmanOnStrike <br/>
+result <br/>
+overId ( references overId from Overball table) <br/>
 
 #Overball
 
-overId
-bowlerName
-inningId (references inningId from Inning table)
+overId <br/>
+bowlerName <br/>
+inningId (references inningId from Inning table) <br/>
 
 #Inning
 
-inningId
-totalOvers
-isWinToss
-teamName
-totalRunsScored
-totalOversBowled
-totalWicketGone
-extras
-highestScorer
-highestWicketTaker
+inningId <br/>
+totalOvers <br/>
+isWinToss <br/>
+teamName <br/>
+totalRunsScored <br/>
+totalOversBowled <br/>
+totalWicketGone <br/>
+extras <br/>
+highestScorer <br/>
+highestWicketTaker <br/>
 
 #Scorecard
 
-scorecardId
-inning1Id (references inningId from Inning Table)
-inning2Id (references inningId from Inning Table)
-gameId (refernces gameId from Game Table)
+scorecardId <br/>
+inning1Id (references inningId from Inning Table) <br/>
+inning2Id (references inningId from Inning Table) <br/>
+gameId (refernces gameId from Game Table) <br/>
 
 #Game
-gameId
-team1Id (references teamId from Team table)
-team2Id (references teamId from Team table)
-winningTeamId (references teamId from Team table)
-manOfMatch
-seriesId (references seriesId from Series table)
+
+gameId <br/>
+team1Id (references teamId from Team table) <br/>
+team2Id (references teamId from Team table) <br/>
+winningTeamId (references teamId from Team table) <br/>
+manOfMatch <br/>
+seriesId (references seriesId from Series table) <br/>
 
 #Series
 
-seriesId
-team1Id (references teamId from Team table)
-team2Id (referenes teamId from Team table)
-totalOvers
-totalGames
-sponsor
-team1Wins
-team2Wins
+seriesId <br/>
+team1Id (references teamId from Team table) <br/>
+team2Id (referenes teamId from Team table) <br/> <br/>
+totalOvers <br/>
+totalGames <br/>
+sponsor <br/>
+team1Wins <br/>
+team2Wins <br/>
 
 #BatsmanFigures
 
-batsFigId
-runs
-balls
-isNotOut
-position
-inningId (references inningId from Inning table)
+batsFigId <br/>
+runs <br/>
+balls <br/>
+isNotOut <br/>
+position <br/>
+inningId (references inningId from Inning table) <br/>
 
 #BolwerFigures
 
-bowlFigId
-wickets
-runsGiven
-position
-inningId ( referenes inningId from Inning table)
+bowlFigId <br/>
+wickets <br/>
+runsGiven <br/>
+position <br/>
+inningId ( referenes inningId from Inning table) <br/>
 
 #FallOfWicket
 
-fallOfWicketId
-runs
-wicketNumber
-inningId ( references inningId from Inning table)
+fallOfWicketId <br/>
+runs <br/>
+wicketNumber <br/>
+inningId ( references inningId from Inning table) <br/>
 
 #Team
 
-teamId
-name
-matchesWin
-matchesLose
+teamId <br/>
+name <br/>
+matchesWin <br/>
+matchesLose <br/>
 
 #Player
 
-playerId
-name
-age
-runsScored
-wicketsTaken
-numberOfCenturies
-fiveWicketHalls
-battingBehaviour ( Opening, MiddleOrder, Tailender)
-bowlingBehaviour (MainBowler, PartTime, NoBowler)
-position
-teamId ( references teamId from Team table)
+playerId <br/>
+name <br/>
+age <br/>
+runsScored <br/>
+wicketsTaken <br/>
+numberOfCenturies <br/>
+fiveWicketHalls <br/>
+battingBehaviour ( Opening, MiddleOrder, Tailender) <br/>
+bowlingBehaviour (MainBowler, PartTime, NoBowler) <br/>
+position <br/>
+teamId ( references teamId from Team table) <br/>
